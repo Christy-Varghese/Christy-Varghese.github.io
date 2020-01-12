@@ -35,6 +35,14 @@ p{
 img{
 	width: 100%;
 }
+
+
+
+
+@font-face{
+	font-family: Oraqle Script;
+	src: url(../Fonts/Oraqle Script.ttf);
+}
 /*End global*/
 
 /*Start reusable*/
@@ -204,7 +212,8 @@ li{
 
 .landing-text h1{
 	font-size: 20rem;
-	font-family: 'The Historia Demo',sans-serif;
+	font-family: 'Oraqle Script',sans-serif;
+	font-weight:bold;
 	background: linear-gradient(to top, #ffe838,#fd57bf);
 	background-clip: border-box;
 	-webkit-background-clip: text;
