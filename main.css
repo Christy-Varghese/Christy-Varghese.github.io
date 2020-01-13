@@ -36,12 +36,9 @@ img{
 	width: 100%;
 }
 
-
-
-
 @font-face{
-	font-family: 'Oraqle Script';
-	src: url("../Fonts/Oraqle Script.ttf");
+	font-family: 'The Historia Demo';
+	src: url("../Fonts/TheHistoriaDemo.ttf");
 }
 /*End global*/
 
