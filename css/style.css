@@ -5,14 +5,14 @@
 /*------Variables-----*/
 
 :root{
-    --main-color: #e02f6b;
-    --blue: #0000ff;
-    --blue-dark: #18293c;
-    --orange: #ffa500;
-    --green-yellow: #cddc39;
-    --pink-light: #efa2b4;
-    --cyan-light: #aef1ee;
-    --white: #ffffff;
+    --main-color: #686f70;
+    --blue: #1ebcd8;
+    --blue-dark: #484745;
+    --orange: #63ed13;
+    --green-yellow: #5ad697;
+    --pink-light: #DEEDF0;
+    --cyan-light: #4c4d4a;
+    --white: #503e9cf5;
     --white-alpha-40: rgba(255,255,255,.40);
     --white-alpha-25: rgba(255,255,255,.25);
     --backdrop-filter-blur: blur(5px);
