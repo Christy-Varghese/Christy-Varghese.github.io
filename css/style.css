@@ -865,6 +865,38 @@ button{
     color: var(--main-color);
 }
 
+/* Daily Poster */
+.dailyposter-section{
+    padding-bottom: 50px;
+}
+
+.dailyposter-item{
+    width: calc((100% /3) - 30px);
+    margin: 0 15px 30px;
+}
+
+.dailyposter-item-thumbnail{
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border-radius: 10px;
+}
+
+.dailyposter-item-thumbnail img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dailyposter-item h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.dailyposter-item-details{
+    display: none;
+}
+
+
 /* Contact */
 
 .contact-info-item{
