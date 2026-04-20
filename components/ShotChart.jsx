@@ -110,16 +110,33 @@ export default function ShotChart() {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="relative w-full max-w-3xl mx-auto aspect-[4/3] bg-mamba-darker rounded-2xl border border-mamba-border overflow-hidden"
       >
-        {/* Court markings */}
-        <div className="absolute inset-0">
-          {/* Center circle */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full border border-mamba-border/30" />
-          {/* Half-court line */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-mamba-border/20" />
-          {/* Baseline */}
-          <div className="absolute bottom-[10%] left-[10%] right-[10%] h-[1px] bg-mamba-border/15" />
-          {/* Three-point arc (approximation) */}
-          <div className="absolute top-[5%] left-[8%] right-[8%] bottom-[20%] border border-mamba-border/10 rounded-[50%]" />
+        {/* Basketball half-court markings */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Outer court border */}
+          <div className="absolute top-[4%] left-[4%] right-[4%] bottom-[4%] border border-mamba-border/20 rounded-sm" />
+
+          {/* Baseline (bottom) */}
+          <div className="absolute bottom-[4%] left-[4%] right-[4%] h-[1px] bg-mamba-border/30" />
+
+          {/* Backboard + Rim at bottom center */}
+          <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 w-12 h-[2px] bg-mamba-border/40" />
+          <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 w-4 h-4 border-2 border-mamba-gold/30 rounded-full translate-y-[-100%]" />
+
+          {/* Paint / Key area */}
+          <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 w-[30%] h-[28%] border border-mamba-border/25" />
+
+          {/* Free-throw circle */}
+          <div className="absolute bottom-[28%] left-1/2 -translate-x-1/2 w-[30%] aspect-square rounded-full border border-mamba-border/15" style={{ clipPath: 'inset(50% 0 0 0)' }} />
+          <div className="absolute bottom-[28%] left-1/2 -translate-x-1/2 w-[30%] aspect-square rounded-full border border-dashed border-mamba-border/10" style={{ clipPath: 'inset(0 0 50% 0)' }} />
+
+          {/* Three-point arc */}
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Three-point line */}
+            <path d="M 68 288 L 68 220 Q 68 60 200 40 Q 332 60 332 220 L 332 288" stroke="currentColor" strokeWidth="1" className="text-mamba-border/20" fill="none" />
+          </svg>
+
+          {/* Restricted area arc (small arc near rim) */}
+          <div className="absolute bottom-[4%] left-1/2 -translate-x-1/2 w-[12%] aspect-square rounded-full border border-mamba-border/15" style={{ clipPath: 'inset(0 0 50% 0)' }} />
         </div>
 
         {/* Skill zones */}
