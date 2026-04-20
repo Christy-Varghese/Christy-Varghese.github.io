@@ -1,8 +1,19 @@
+/**
+ * @file TrainingLog.jsx — Q4 "The Training Log"
+ * @description Work experience timeline section. Each role is displayed on a
+ *   vertical timeline (gold→purple gradient line) with a narrative basketball
+ *   badge (Starting Five, Off-Season Training, Mid-Season Grind, etc.).
+ *   Current roles are highlighted with gold dots; past roles use purple.
+ *   Roles span: Concentrix, IIT Roorkee, Quality Inn, City of London,
+ *   ExperientialEtc, NeyX.
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Shield, Gamepad2, Palette } from 'lucide-react';
 
+/** Work experience entries — ordered from most recent to oldest */
 const experiences = [
   {
     role: 'Technical Support Advisor',

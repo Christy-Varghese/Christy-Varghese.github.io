@@ -1,3 +1,12 @@
+/**
+ * @file ModeToggle.jsx — Theme Toggle (Jersey #8 ↔ #24)
+ * @description Animated toggle button that switches between:
+ *   - "Rookie" mode (#8) — Purple & Gold lighter theme
+ *   - "Mamba" mode (#24) — Black Mamba darker theme
+ *   Uses a basketball-styled toggle knob with orange seam lines.
+ *   Consumes ThemeContext via useTheme() hook.
+ */
+
 'use client';
 
 import { useTheme } from '@/context/ThemeContext';

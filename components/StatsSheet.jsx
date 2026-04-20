@@ -1,8 +1,24 @@
+/**
+ * @file StatsSheet.jsx — Q2 "The Stats Sheet"
+ * @description Performance metrics section showcasing Concentrix KPIs.
+ *   - AnimatedCounter: Counts up numbers with eased cubic animation on scroll
+ *   - Main stats grid: Total Interactions, CSAT, AHT, Surveys (scoreboard layout)
+ *   - KPI progress bars: Issue Resolution, Advisor Recommended, Quality Adoption, Logged Interaction
+ *   All data reflects real Concentrix performance (Mar 2025–Apr 2026).
+ */
+
 'use client';
 
 import { useRef, useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
+/**
+ * AnimatedCounter — Animates a number from 0 to `target` on scroll into view.
+ * @param {number} target    — Final value to count up to
+ * @param {string} suffix    — Text appended after the number (e.g., '%', 'min')
+ * @param {number} decimals  — Decimal places to display
+ * @param {number} duration  — Animation duration in seconds
+ */
 function AnimatedCounter({ target, suffix = '', decimals = 0, duration = 2 }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);

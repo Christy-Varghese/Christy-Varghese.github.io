@@ -1,3 +1,13 @@
+/**
+ * @file Hero.jsx — Q1 "The Tip-Off"
+ * @description Full-screen hero section with animated entrance. Features:
+ *   - Background jersey numbers (8 & 24) as subtle watermarks
+ *   - Gradient gold name with glow effect
+ *   - Credential tags (ISC2 CC, IIT Roorkee, Meta Top 76, Location)
+ *   - CTA buttons for LinkedIn, GitHub, and personal site
+ *   - Scroll-down indicator with bouncing basketball animation
+ */
+
 'use client';
 
 import { useRef, useEffect } from 'react';

@@ -1,3 +1,12 @@
+/**
+ * @file PageLoader.jsx — Full-Screen Loading Animation
+ * @description Shows a basketball-themed loader on initial page load:
+ *   1. "Warming Up..." with spinning basketball (0–800ms)
+ *   2. Ball morphs into a data ring + "Processing Data..." (800–1600ms)
+ *   3. Fades out with scale animation, revealing the site
+ *   Background displays faded jersey numbers 8 / 24.
+ */
+
 'use client';
 
 import { useState, useEffect } from 'react';

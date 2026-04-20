@@ -1,3 +1,23 @@
+/**
+ * @file ProjectCard.jsx — Reusable Project Card
+ * @description Animated card component used by Playbook.jsx. Features:
+ *   - Badge label (e.g., "🏆 Rookie of the Year")
+ *   - Title with gold hover effect + emoji icon
+ *   - Description, inline stats, colored tech tags
+ *   - External link with arrow (↗)
+ *   - Bottom gold line glow on hover ("swish" effect via CSS)
+ *
+ * @param {string} title       — Project name
+ * @param {string} badge       — Narrative badge label
+ * @param {string} description — One-liner project summary
+ * @param {Array}  stats       — [{value, label}] shown as inline metrics
+ * @param {Array}  tags        — [{name, color}] tech/skill tags
+ * @param {string} link        — External URL
+ * @param {string} linkLabel   — CTA text (default: "View project")
+ * @param {string} icon        — Emoji icon displayed beside title
+ * @param {number} delay       — Framer Motion entrance delay (seconds)
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';

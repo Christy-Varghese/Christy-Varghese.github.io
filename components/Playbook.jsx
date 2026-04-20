@@ -1,8 +1,17 @@
+/**
+ * @file Playbook.jsx — Q3 "The Playbook"
+ * @description Project showcase section. Each project is rendered as a ProjectCard
+ *   with a basketball narrative badge (Rookie of the Year, Championship, etc.).
+ *   Projects: TeachAR (AR education), StudyBuddy (AI/RAG), Reboot Kerala (data),
+ *   Vita App (UI/UX flood alert).
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
+/** Portfolio projects data — each maps to a ProjectCard component */
 const projects = [
   {
     title: 'TeachAR',

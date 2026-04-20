@@ -1,8 +1,18 @@
+/**
+ * @file AwardsEducation.jsx — "Hall of Fame" & "Draft Class"
+ * @description Two sections in one component:
+ *   1. Awards — List of 6 achievements (SparkAR, IEEE, KSCSTE, Design Prize, etc.)
+ *      displayed in a card with icon, title, description, and date.
+ *   2. Education — 3 entries (IIT Roorkee, Fanshawe College, St. Joseph's)
+ *      with abbreviation badges and "In Progress" indicator for current studies.
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';
 import { Trophy, Award, Star, Rocket, Medal, Zap } from 'lucide-react';
 
+/** Awards data — displayed in the "Hall of Fame" section */
 const awards = [
   {
     icon: <Trophy size={18} className="text-mamba-gold" />,

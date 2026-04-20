@@ -1,7 +1,21 @@
+/**
+ * @file ShotChart.jsx — "Scouting Report"
+ * @description Technical skills visualized as hot zones on a basketball half-court.
+ *   Each skill is a circular zone positioned by (x, y) percentage coordinates.
+ *   Proficiency levels determine zone color:
+ *     - Hot (85%+) → gold glow   |  Warm (70–84%) → purple  |  Developing (<70%) → muted
+ *   The court features SVG-based basketball markings: three-point arc, paint/key,
+ *   free-throw circle, backboard, rim, and restricted area arc.
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';
 
+/**
+ * Skills data — each zone is positioned on the court by (x, y) percentage.
+ * `level` determines the heat color; `size` controls the circle dimensions.
+ */
 const zones = [
   // Row 1 — outer long range
   { name: 'Python', level: 95, x: 15, y: 10, size: 'lg' },

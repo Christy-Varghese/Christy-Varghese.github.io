@@ -1,3 +1,20 @@
+/**
+ * @file layout.js — Root Layout
+ * @description The root layout for the Mamba Portfolio site. Loads Google Fonts
+ *              (Inter, Oswald, JetBrains Mono), wraps the app in a ThemeProvider
+ *              for dark/light mode, and renders global UI elements (PageLoader,
+ *              ScrollIndicator) that persist across all pages.
+ *
+ * Font roles:
+ *   --font-inter      → Body text
+ *   --font-oswald     → Headlines (Mamba / sports aesthetic)
+ *   --font-jetbrains  → Monospace labels, stats, code
+ *
+ * @see ThemeContext.jsx  — provides `mode` ('mamba' | 'rookie') to all children
+ * @see PageLoader.jsx    — basketball-to-data loading animation
+ * @see ScrollIndicator.jsx — court-sideline scroll progress
+ */
+
 import { Inter, Oswald, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';

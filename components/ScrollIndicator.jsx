@@ -1,3 +1,13 @@
+/**
+ * @file ScrollIndicator.jsx — Court Sideline Scroll Progress
+ * @description Fixed right-side scroll indicator (desktop only, lg+).
+ *   A vertical "sideline" track shows scroll progress with:
+ *   - Basketball-shaped indicator that moves from TIP (top) to FIN (bottom)
+ *   - Half-court mark at 50%, free-throw lines at 20% and 80%
+ *   - Gold glow ring around the ball with pulse animation
+ *   Uses spring physics for smooth tracking via Framer Motion.
+ */
+
 'use client';
 
 import { useState, useEffect } from 'react';

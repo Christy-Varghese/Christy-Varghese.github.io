@@ -1,3 +1,10 @@
+/**
+ * @file Footer.jsx — Site Footer
+ * @description Contact links grid (email, phone, LinkedIn, GitHub, website, YouTube),
+ *   identity block with ModeToggle (8/24 theme switcher), and a Kobe Bryant quote.
+ *   Background watermark of jersey #24. Bottom bar shows copyright and jersey numbers.
+ */
+
 'use client';
 
 import { motion } from 'framer-motion';

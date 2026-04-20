@@ -1,9 +1,18 @@
+/**
+ * @file Navbar.jsx — Fixed Top Navigation
+ * @description Sticky navigation bar with desktop link row and mobile hamburger
+ *              overlay. Shows a blur backdrop once the user scrolls past 50px.
+ *              Logo displays "CV" with Kobe's jersey numbers (8 / 24).
+ *              Navigation items map to section anchors (#tip-off, #stats, etc.).
+ */
+
 'use client';
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
+/** Section anchor links displayed in the navbar */
 const navItems = [
   { label: 'Tip-Off', href: '#tip-off' },
   { label: 'Stats', href: '#stats' },
