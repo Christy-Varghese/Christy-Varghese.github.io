@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
  * @param {{ src?: string, alt?: string, className?: string }} props
  */
 export default function ProfileImage({
-  src = '/image_1.jpeg',
+  src = '/image_1.png',
   alt = 'Christy Varghese — IT Professional & Data Analyst',
   className = '',
 }) {

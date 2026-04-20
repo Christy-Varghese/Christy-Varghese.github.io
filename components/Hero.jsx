@@ -47,15 +47,11 @@ export default function Hero() {
         </span>
       </motion.div>
 
-      {/* Profile image */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.85, duration: 0.6, ease: 'easeOut' }}
-        className="mb-6"
-      >
-        <ProfileImage />
-      </motion.div>
+      {/* Main content row: text left, image right */}
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 md:gap-12">
+
+        {/* Left column — text content */}
+        <div className="flex-1 min-w-0">
 
       {/* Headline */}
       <motion.h1
@@ -152,6 +148,20 @@ export default function Hero() {
           <Globe size={16} /> Portfolio
         </a>
       </motion.div>
+
+        </div>{/* end left column */}
+
+        {/* Right column — Profile image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.85, duration: 0.6, ease: 'easeOut' }}
+          className="flex-shrink-0 flex justify-center md:justify-end"
+        >
+          <ProfileImage className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64" />
+        </motion.div>
+
+      </div>{/* end content row */}
 
       {/* Kobe Quote */}
       <motion.blockquote
