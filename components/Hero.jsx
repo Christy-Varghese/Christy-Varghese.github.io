@@ -140,7 +140,7 @@ export default function Hero() {
           <Github size={16} /> GitHub
         </a>
         <a
-          href="https://christyvarghese.me"
+          href="https://christy-varghese.github.io/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-mamba-border text-mamba-muted hover:text-mamba-white hover:border-mamba-purple/50 transition-all duration-300"

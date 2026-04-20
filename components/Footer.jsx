@@ -16,7 +16,7 @@ const links = [
   { icon: <Phone size={14} />, label: 'Phone', href: 'tel:+15488812601' },
   { icon: <Linkedin size={14} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/christy-varghese/' },
   { icon: <Github size={14} />, label: 'GitHub', href: 'https://github.com/Christy-Varghese' },
-  { icon: <Globe size={14} />, label: 'Website', href: 'https://christyvarghese.me' },
+  { icon: <Globe size={14} />, label: 'Website', href: 'https://christy-varghese.github.io/' },
   { icon: <Youtube size={14} />, label: 'YouTube', href: 'https://youtube.com/MegaMamba' },
 ];
 
