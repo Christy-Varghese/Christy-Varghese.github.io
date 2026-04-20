@@ -46,17 +46,17 @@ export default function Footer() {
         </div>
 
         {/* Center: links */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target={link.href.startsWith('http') ? '_blank' : undefined}
               rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="flex items-center gap-2 text-xs text-mamba-hint hover:text-mamba-gold transition-colors font-mono"
+              className="flex items-center gap-2 text-xs text-mamba-hint hover:text-mamba-gold transition-colors font-mono min-w-0"
             >
-              {link.icon}
-              {link.label}
+              <span className="flex-shrink-0">{link.icon}</span>
+              <span className="truncate">{link.label}</span>
             </a>
           ))}
         </div>
