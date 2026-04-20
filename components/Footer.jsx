@@ -13,11 +13,11 @@ import ModeToggle from './ModeToggle';
 
 const links = [
   { icon: <Mail size={14} />, label: 'Gmail', href: 'mailto:christyvarghesejobs@gmail.com' },
-  { icon: <Phone size={14} />, label: '+1 548 881 2601', href: 'tel:+15488812601' },
+  { icon: <Phone size={14} />, label: 'Phone', href: 'tel:+15488812601' },
   { icon: <Linkedin size={14} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/christy-varghese/' },
   { icon: <Github size={14} />, label: 'GitHub', href: 'https://github.com/Christy-Varghese' },
-  { icon: <Globe size={14} />, label: 'christyvarghese.me', href: 'https://christyvarghese.me' },
-  { icon: <Youtube size={14} />, label: 'MegaMamba', href: 'https://youtube.com/MegaMamba' },
+  { icon: <Globe size={14} />, label: 'Website', href: 'https://christyvarghese.me' },
+  { icon: <Youtube size={14} />, label: 'YouTube', href: 'https://youtube.com/MegaMamba' },
 ];
 
 export default function Footer() {
