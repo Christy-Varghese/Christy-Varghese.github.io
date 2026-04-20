@@ -1,8 +1,8 @@
 /**
- * @file ModeToggle.jsx — Theme Toggle (Jersey #8 ↔ #24)
+ * @file ModeToggle.jsx — Theme Toggle (Jersey #8 ↔ #21)
  * @description Animated toggle button that switches between:
  *   - "Rookie" mode (#8) — Purple & Gold lighter theme
- *   - "Mamba" mode (#24) — Black Mamba darker theme
+ *   - "Mamba" mode (#21) — Black Mamba darker theme
  *   Uses a basketball-styled toggle knob with orange seam lines.
  *   Consumes ThemeContext via useTheme() hook.
  */
@@ -21,7 +21,7 @@ export default function ModeToggle() {
       onClick={toggleMode}
       className="group relative flex items-center gap-3 px-4 py-2.5 rounded-full border border-mamba-border bg-mamba-card hover:border-mamba-gold/40 transition-all duration-300"
       whileTap={{ scale: 0.95 }}
-      title={isMamba ? 'Switch to Rookie Mode (#8)' : 'Switch to Black Mamba Mode (#24)'}
+      title={isMamba ? 'Switch to Rookie Mode (#8)' : 'Switch to Mamba Mode (#21)'}
     >
       {/* Jersey numbers */}
       <span
@@ -65,7 +65,7 @@ export default function ModeToggle() {
           isMamba ? 'text-mamba-gold scale-110' : 'text-mamba-hint scale-90 opacity-50'
         }`}
       >
-        24
+        21
       </span>
 
       {/* Label */}

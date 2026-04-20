@@ -2,7 +2,7 @@
  * @file Navbar.jsx — Fixed Top Navigation
  * @description Sticky navigation bar with desktop link row and mobile hamburger
  *              overlay. Shows a blur backdrop once the user scrolls past 50px.
- *              Logo displays "CV" with Kobe's jersey numbers (8 / 24).
+ *              Logo displays "CV" with jersey numbers (8 / 21).
  *              Navigation items map to section anchors (#tip-off, #stats, etc.).
  */
 
@@ -52,7 +52,7 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center gap-1 font-mono text-[10px] text-mamba-hint">
               <span className="text-mamba-purple font-bold">8</span>
               <span>/</span>
-              <span className="text-mamba-gold font-bold">24</span>
+              <span className="text-mamba-gold font-bold">21</span>
             </div>
           </a>
 

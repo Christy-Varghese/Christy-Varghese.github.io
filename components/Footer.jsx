@@ -1,8 +1,8 @@
 /**
  * @file Footer.jsx — Site Footer
  * @description Contact links grid (email, phone, LinkedIn, GitHub, website, YouTube),
- *   identity block with ModeToggle (8/24 theme switcher), and a Kobe Bryant quote.
- *   Background watermark of jersey #24. Bottom bar shows copyright and jersey numbers.
+ *   identity block with ModeToggle (8/21 theme switcher), and a Kobe Bryant quote.
+ *   Background watermark of jersey #21. Bottom bar shows copyright and jersey numbers.
  */
 
 'use client';
@@ -25,7 +25,7 @@ export default function Footer() {
     <footer className="relative px-6 md:px-16 lg:px-24 py-16 border-t border-mamba-border/40">
       {/* Background number */}
       <div className="absolute right-8 bottom-4 font-headline text-[8rem] font-bold text-mamba-purple/[0.03] leading-none pointer-events-none select-none">
-        24
+        21
       </div>
 
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
@@ -41,7 +41,7 @@ export default function Footer() {
             London, Ontario, Canada
           </p>
 
-          {/* 8/24 Toggle */}
+          {/* 8/21 Toggle */}
           <ModeToggle />
         </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           <span className="font-headline text-xs text-mamba-purple/30 font-bold">8</span>
           <span className="text-mamba-border">|</span>
-          <span className="font-headline text-xs text-mamba-gold/30 font-bold">24</span>
+          <span className="font-headline text-xs text-mamba-gold/30 font-bold">21</span>
         </div>
       </div>
     </footer>

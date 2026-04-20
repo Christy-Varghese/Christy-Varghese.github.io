@@ -2,7 +2,7 @@
  * @file ThemeContext.jsx — Theme State Management
  * @description React Context that provides a global theme mode to the app.
  *   Two modes inspired by Kobe Bryant's jersey numbers:
- *     - 'mamba'  (#24) — Black Mamba dark theme (default)
+ *     - 'mamba'  (#21) — Black Mamba dark theme (default)
  *     - 'rookie' (#8)  — Purple & Gold lighter variant
  *   Sets `data-mode` attribute on <html> so CSS can style both themes.
  *
@@ -17,7 +17,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [mode, setMode] = useState('mamba'); // 'mamba' = Black Mamba (#24), 'rookie' = Purple & Gold (#8)
+  const [mode, setMode] = useState('mamba'); // 'mamba' = Black Mamba (#21), 'rookie' = Purple & Gold (#8)
 
   const toggleMode = () => {
     setMode(prev => (prev === 'mamba' ? 'rookie' : 'mamba'));

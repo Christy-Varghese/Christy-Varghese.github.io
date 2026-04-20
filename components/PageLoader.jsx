@@ -4,7 +4,7 @@
  *   1. "Warming Up..." with spinning basketball (0–800ms)
  *   2. Ball morphs into a data ring + "Processing Data..." (800–1600ms)
  *   3. Fades out with scale animation, revealing the site
- *   Background displays faded jersey numbers 8 / 24.
+ *   Background displays faded jersey numbers 8 / 21.
  */
 
 'use client';
@@ -56,7 +56,7 @@ export default function PageLoader() {
           >
             <span className="text-mamba-purple">8</span>
             <span className="text-mamba-muted text-2xl">/</span>
-            <span className="text-mamba-gold">24</span>
+            <span className="text-mamba-gold">21</span>
           </motion.div>
         </motion.div>
       )}

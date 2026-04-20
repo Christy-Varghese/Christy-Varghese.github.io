@@ -1,7 +1,7 @@
 /**
  * @file Hero.jsx — Q1 "The Tip-Off"
  * @description Full-screen hero section with animated entrance. Features:
- *   - Background jersey numbers (8 & 24) as subtle watermarks
+ *   - Background jersey numbers (8 & 21) as subtle watermarks
  *   - Gradient gold name with glow effect
  *   - Credential tags (ISC2 CC, IIT Roorkee, Meta Top 76, Location)
  *   - CTA buttons for LinkedIn, GitHub, and personal site
@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Background jersey numbers */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         <div className="absolute -right-10 top-10 font-headline text-[20rem] md:text-[28rem] font-bold text-mamba-purple/[0.04] leading-none">
-          24
+          21
         </div>
         <div className="absolute -left-5 bottom-0 font-headline text-[14rem] md:text-[20rem] font-bold text-mamba-gold/[0.03] leading-none">
           8
