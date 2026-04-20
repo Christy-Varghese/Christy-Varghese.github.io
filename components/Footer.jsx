@@ -12,7 +12,7 @@ import { Mail, Phone, Linkedin, Github, Globe, Youtube } from 'lucide-react';
 import ModeToggle from './ModeToggle';
 
 const links = [
-  { icon: <Mail size={14} />, label: 'christyvarghese@outlook.com', href: 'mailto:christyvarghese@outlook.com' },
+  { icon: <Mail size={14} />, label: 'christyvarghesejobs@gmail.com', href: 'mailto:christyvarghesejobs@gmail.com' },
   { icon: <Phone size={14} />, label: '+1 548 881 2601', href: 'tel:+15488812601' },
   { icon: <Linkedin size={14} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/christy-varghese/' },
   { icon: <Github size={14} />, label: 'GitHub', href: 'https://github.com/Christy-Varghese' },
