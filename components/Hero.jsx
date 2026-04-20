@@ -13,6 +13,7 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Linkedin, Github, Globe } from 'lucide-react';
+import ProfileImage from './ProfileImage';
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -44,6 +45,16 @@ export default function Hero() {
         <span className="font-mono text-xs uppercase tracking-[0.2em] text-mamba-gold">
           Q1 · The Tip-Off
         </span>
+      </motion.div>
+
+      {/* Profile image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1.85, duration: 0.6, ease: 'easeOut' }}
+        className="mb-6"
+      >
+        <ProfileImage />
       </motion.div>
 
       {/* Headline */}
