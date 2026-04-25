@@ -16,6 +16,23 @@ import { Briefcase, GraduationCap, Shield, Gamepad2, Palette } from 'lucide-reac
 /** Work experience entries — ordered from most recent to oldest */
 const experiences = [
   {
+    role: 'IIT Roorkee — Data Analytics with AI & Gen AI',
+    company: 'Indian Institute of Technology, Roorkee',
+    type: 'Programme · In Progress',
+    location: 'Online',
+    date: 'Mar 2026 – Oct 2026',
+    current: true,
+    badge: 'Off-Season Training',
+    icon: <GraduationCap size={16} />,
+    narrative: 'Off-Season Training — Leveling Up',
+    bullets: [
+      'Python for analytics, Pandas, NumPy, Machine Learning foundations',
+      'Generative AI, Prompt Engineering, LLMs — building the next-gen skillset',
+      'Power BI, Tableau, Business Intelligence — data visualization mastery',
+    ],
+    tags: ['Python', 'ML', 'Gen AI', 'Power BI', 'LLMs'],
+  },
+  {
     role: 'Technical Support Advisor',
     company: 'Concentrix',
     type: 'Full-time · Remote',
@@ -32,23 +49,6 @@ const experiences = [
       'Managed 11.39% escalation rate with Tier 2/3 teams; contributed to hiring as Team Captain',
     ],
     tags: ['KPI Analysis', 'Data Documentation', 'Team Leadership'],
-  },
-  {
-    role: 'IIT Roorkee — Data Analytics with AI & Gen AI',
-    company: 'Indian Institute of Technology, Roorkee',
-    type: 'Programme · In Progress',
-    location: 'Online',
-    date: 'Mar 2026 – Oct 2026',
-    current: true,
-    badge: 'Off-Season Training',
-    icon: <GraduationCap size={16} />,
-    narrative: 'Off-Season Training — Leveling Up',
-    bullets: [
-      'Python for analytics, Pandas, NumPy, Machine Learning foundations',
-      'Generative AI, Prompt Engineering, LLMs — building the next-gen skillset',
-      'Power BI, Tableau, Business Intelligence — data visualization mastery',
-    ],
-    tags: ['Python', 'ML', 'Gen AI', 'Power BI', 'LLMs'],
   },
   {
     role: 'User Support Technician',
